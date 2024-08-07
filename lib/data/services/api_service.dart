@@ -5,6 +5,8 @@ import '../models/listModel.dart';
 
 
 class ApiService {
+
+  //Fetching Data
   Future<List<ListModel>> getListItems() async {
     final response = await http.get(Uri.parse(ApiUrl.posts));
 
